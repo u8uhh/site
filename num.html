@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>script</title>
+</head>
+<body>
+<script type="text/javascript">
+let answer;
+let inputN = +prompt("Введіть число від 1 до 50","");
+let questN = +prompt("Вгадайте число від 1 до 50","");
+if(questN > inputN) {answer="Ваше число більше"};
+if(questN < inputN) {answer="Ваше число менше"};
+if(questN == inputN) {answer="Ви Вгадали!"};
+alert(answer);
+alert( true || true ); 
+alert( false || true );
+alert( true || false );
+alert( false || false );
+let money = +prompt('Яку суму хочете зняти','');
+if (money < 50 || money > 3000) {
+alert('На жаль, Ви  можете зняти гроші на суму від 50 грн. до 3000 грн.');
+}
+else if(money%50==0){
+	alert('Заберіть свої кошти у сумі '+money+' грн')
+}
+else {
+alert('Вибачте, але у нас мінімальна купюра 50 грн')
+}
+alert(true && true); 
+alert(false && true);
+alert(true && false);
+alert(false && false);
+
+let time = 12,  discount = 15;
+if (time == 12 && discount == 15) {
+	alert('Час для знижок!!!' );
+} else{
+	alert('Приходьте наступного разу')
+}
+alert( !true );
+alert( !0 )
+let age = +prompt('Вкажіть Ваш вік :', 0)
+if (age < 18 || age >100) {
+	alert('Не впевнений, що Ви наш клієнт');
+} else{
+	 alert('Ласкаво просимо, на наш сайт!' );
+}
+</script>
+</body>
+</html>

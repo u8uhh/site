@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/640px-NewTux.svg.png">
+	<title>marks</title>
+	<style type="text/css">
+		body{
+		background-color: yellow;
+		color: blue;
+		font-size: 50px;
+	}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	/*let mark=+prompt('Введіть свою оцінку',"");
+	if(mark==1||mark==2||mark==3){
+		document.write("Ваша оцінка належить до незадовільних оцінок")
+	}
+	if(mark==4||mark==5||mark==6){
+		document.write("Ваша оцінка належить до задовільних оцінок")
+	}
+	if(mark==7||mark==8||mark==9){
+		document.write("Ваша оцінка належить до добрих оцінок")
+	}
+	if(mark==10||mark==11||mark==12){
+		document.write("Ваша оцінка належить до відмінних оцінок")
+	}
+	else{
+		document.write("Не коректне введення оцінок")
+	}*/
+let mark=+prompt('Введіть свою оцінку',"");
+switch(mark){
+	case 1:
+	case 2:
+	case 3:
+	document.write("Ваша оцінка належить до незадовільних оцінок")
+	break;
+	case 4:
+	case 5:
+	case 6:
+	document.write("Ваша оцінка належить до задовільних оцінок")
+	break;
+	case 7:
+	case 8:
+	case 9:
+	document.write("Ваша оцінка належить до добрих оцінок")
+	break;
+	case 10:
+	case 11:
+	case 12:
+	document.write("Ваша оцінка належить до відмінних оцінок")
+	break;
+	default:
+	document.write("Не коректне введення оцінок")
+	break;
+}
+	
+		
+	
+</script>
+</body>
+</html>

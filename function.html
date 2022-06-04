@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>function</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*let userName = 'ДокторХто';
+	function showHi() {
+	let	userName = 'КапітанОчевидність';
+	let hi = 'Привіт тобі '+userName+' від Функції!'; 
+ 	alert(hi);
+ 	
+}
+showHi();
+alert(userName)
+let userName = 'ДокторХто';
+	function showHi(userName,userSay) {
+	userName = userName +' сказав: ';
+  alert(userName + userSay);
+	
+}
+showHi ('КапітанОчевидність', 'Привіт!');
+showHi ('Микола', 'І тобі Привіт!');
+alert('значення змінної('+ userName +') залишилося без змін!');
+let userName = 'ДокторХто';
+	function showHi(userName,userSay) {
+		if (userSay === undefined) {
+    userSay = 'Хм…';
+  }
+	userName = userName +' сказав: ';
+  alert(userName + userSay);
+	
+}
+showHi ('КапітанОчевидність', 'Привіт!');
+showHi ('Микола');
+alert('значення змінної('+ userName +') залишилося без змін!');
+function checkSum(sum) {
+  if (sum > 1000) {
+    return true;
+  } else {
+	return confirm('Для знижки вам необхідно вибрати ще товарів на сумму більше 1000 грн. Продовжимо?');
+  }
+}
+let sum = +prompt('Вкажіть суму покупки?');
+if (checkSum(sum)) {
+alert('Знижка 20% забезпечена!' );
+} else {
+ alert( 'Нічого, у нас все одно низькі ціни!');
+}
+function max(x, y) {
+  if (x > y) {
+    return alert(x);
+  } else {
+    return alert(y);
+  }
+}
+
+max(1,3);
+max(81,13);
+*/
+
+function power(x,n){
+let result=1;
+for(let i=1;i<=n;i++){
+	result=result*x;
+}
+return result;
+}
+let x = prompt("Введите x:", '');
+let n = prompt("Введите n:", '');
+if (n < 1) {
+  alert('За умовами задачі, необхідно щоб n було більше або дорівнює 1');
+} else {
+
+alert(power(x,n))
+}
+</script>
+</body>
+</html>

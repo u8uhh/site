@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loop</title>
+</head>
+
+<body>
+    <script>
+        let count = 0;
+
+        while (count < 4) {
+            alert(count);
+            count++;
+        }
+        let count = 4;
+        while (count) {
+            alert(count);
+            count--;
+        }
+        let count = 22;
+        do {
+            alert(count);
+            count++;
+        } while (count < 4);
+        let count = 0;
+        for (count = 0; count < 4; count++) {
+            alert(count);
+        }
+        let count = 0;
+        while (count++ < 4) {
+            alert(count);
+        }
+
+        let min = +prompt('Введіть мінімальне число діапазону', 0);
+        let max = +prompt('Введіть максимальне число діапазону', 100);
+        for (let i = min; i <= max; i++) {
+            if (i % 2 == 0) {
+                document.write(i + "<br>")
+            }
+        }
+        let min = +prompt('Введіть мінімальне число діапазону', 0);
+        let max = +prompt('Введіть максимальне число діапазону', 100);
+        let sum = 0;
+        for (let i = min; i <= max; i++) {
+            sum = sum + i;
+
+        }
+        alert("Сума чисел в діапазоні дорівнює " + sum)
+        let sum = 0;
+        while (true) {
+            let value = +prompt('Введіть число', '');
+            if (!value) break;
+            sum = sum + value;
+        }
+        alert('Сума: ' + sum);
+        for (let i = 128000; i <= 128500; i++) {
+            document.write("&#" + i + " - " + i + "<br>")
+        }
+    </script>
+</body>
+
+</html>

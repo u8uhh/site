@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>loop</title>
+	<style type="text/css">
+		body{
+			color: blue;
+			background-color: yellow;
+			font-size: 30px;
+			font-family: 'Lobster', cursive;
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+
+/*let number=+prompt("Скільки хочеш привітань?",100)
+for ( let sc = 1; sc <= number; sc++) {
+document.write(sc+") "+"Слава Україні!"+"<br>");
+}
+document.write("Героям слава!");
+let min=+prompt('Введіть мінімальне число діапазону',0)
+let max=+prompt('Введіть максимальне число діапазону',100)
+for(let i=min; i<=max;i++){
+	if(i%2==1){
+	document.write(i+" ")
+}
+}
+let min=+prompt('Введіть мінімальне число діапазону',0)
+let max=+prompt('Введіть максимальне число діапазону',100)
+let sum=0;
+for(let i=min; i<=max;i++){
+	sum+=i;
+}
+document.write('Сума чисел в діапазоні =' +sum)
+let sum = 0;
+while (true) {
+  let value = +prompt('Введіть число', '');
+  if (!value) break; 
+  sum += value;
+}
+alert( 'Сума: ' + sum );*/
+let num;
+do {
+  num = prompt("Введіть число, більше за 100?", 0);
+} while (num <= 100 && num!=null);
+if (num===null){
+	alert("До побачення!")
+}else{
+alert ("Ваше число: " + num)
+}
+
+
+</script>
+</body>
+</html>

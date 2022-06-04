@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Methods</title>
+</head>
+<body>
+<script type="text/javascript">
+/*let max=+prompt("Введіть максимальне число діапазону",100)
+for (let i = 1; i <= 1000; i++) {
+document.write(Math.floor(Math.random()*(max+1))+" ")
+}*/
+let min=+prompt("Введіть мінімальне число діапазону",0)
+let max=+prompt("Введіть максимальне число діапазону",100)
+for (let i = 1; i <= 1000; i++) {
+document.write(Math.floor(min+Math.random()*(max-min+1))+" ")
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>loop</title>
+	<style type="text/css">
+		body{
+			background-color: yellow;
+			color: blue;
+			font-family: 'Lobster', cursive;
+			font-size: 30px;
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+
+	/*let num=prompt('Скільки хочеш привітань?',100);
+	for (let i = 1; i <= num; i++) {
+		document.write(i+") "+"Слава Україні! Героям слава!"+"<br>")
+	}
+	let num;
+	do {
+ 	 num = prompt("Введіть число, більше за 100?", 0);
+	} while (num <= 100 && num!=null);
+	if (num===null){
+	alert("До побачення!")
+	}else{
+	alert ("Ваше число: " + num)
+	}*/
+let numUser; 
+let numX=42;
+let attemp=0;
+ do { numUser = prompt("вгадайте число від 0 до 100", 0); 
+attemp++;
+if (numUser===null) { 
+alert("Ми чекали від Вас число");
+} else if (+numUser<numX) { 
+alert("Ваше число менше"); 
+} else if (+numUser>numX){
+alert("Ваше число більше"); 
+} else { 
+alert("Ура!!! Вгадали!!! число"+numX+" за спроб: "+attemp); } 
+} while (numUser != numX && numUser != null);
+
+
+</script>
+</body>
+</html>
